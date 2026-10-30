@@ -10,9 +10,10 @@
 Keep things simple:
 
 - `index.html` — the portal homepage (top level)
-- `tools/` — one page per tool (`tool-1.html` is a placeholder)
+- `tools/` — one page per tool (`voltage-divider.html`)
 - `css/style.css` — shared styles, including the light and dark themes
 - `js/theme.js` — the light/dark toggle, shared by every page
+- `js/voltage-divider.js` — the voltage divider calculation
 
 Update this section whenever files are added or moved.
 
@@ -37,7 +38,7 @@ A portal where students try small Electrical Engineering tools.
 
 - Phase 1: the portal plus its first tool, a voltage divider calculator (in: input voltage, R1, R2; out: output voltage), with the light/dark toggle and responsive layout.
   - [x] Step 1: portal homepage, theme toggle, and a placeholder "Tool 1 — coming soon" card that opens and returns via the navigation (no tool logic, neutral styling).
-  - [ ] Step 2: build the voltage divider tool.
+  - [x] Step 2: voltage divider tool replaces the placeholder (units dropdown, Calculate button, shows Vout, current and the formula).
 - Phase 2: more Electrical Engineering tools (to be chosen later).
 - Phase 3: polish and extras (to be chosen later).
 

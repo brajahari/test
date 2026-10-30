@@ -117,3 +117,62 @@ button:focus-visible {
     grid-template-columns: repeat(3, 1fr);
   }
 }
+
+.field {
+  margin-bottom: 1rem;
+}
+
+.field label {
+  display: block;
+  margin-bottom: 0.25rem;
+}
+
+.field-row {
+  display: flex;
+  gap: 0.5rem;
+}
+
+input,
+select {
+  min-height: 44px;
+  padding: 0.5rem;
+  font: inherit;
+  color: var(--text);
+  background: var(--bg);
+  border: 1px solid var(--border);
+  border-radius: 6px;
+}
+
+input {
+  width: 100%;
+  max-width: 20rem;
+}
+
+.field-row input {
+  flex: 1;
+}
+
+.result {
+  margin-top: 1.5rem;
+}
+
+.result:not(:empty) {
+  padding: 1rem;
+  background: var(--card-bg);
+  border: 1px solid var(--border);
+  border-radius: 6px;
+}
+
+.result p {
+  margin: 0 0 0.5rem;
+}
+
+.result p:last-child {
+  margin-bottom: 0;
+}
+
+input:focus-visible,
+select:focus-visible {
+  outline: 3px solid var(--link);
+  outline-offset: 2px;
+}
