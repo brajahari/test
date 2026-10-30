@@ -23,6 +23,38 @@ Update this section whenever files are added or moved.
 2. Users can toggle between a light and a dark theme. The default is the light theme.
 3. Text must stay easy to read, with good contrast, in both the light and the dark theme.
 
+## Design Direction
+
+The look is called **Blueprint**: technical, square-cornered, high contrast. The tokens live as CSS variables at the top of `css/style.css`. Use them. Do not hard-code colors, fonts or spacing in new pages.
+
+**Palette**
+
+| Token | Light (default) | Dark |
+|---|---|---|
+| `--bg` page background | `#f4f7f6` | `#0a1c26` |
+| `--surface` cards, results | `#ffffff` | `#11293a` |
+| `--border` | `#9db2af` | `#3d6179` |
+| `--text` | `#0e2a2b` | `#e6f4f4` |
+| `--muted` secondary text | `#3f5a5b` | `#9fc0c8` |
+| `--accent` links, highlights, main buttons | `#0b6e6e` | `#4fd1c5` |
+| `--on-accent` text on the accent | `#ffffff` | `#04202a` |
+| `--error` | `#a12626` | `#ff9a9a` |
+
+**Typography**
+
+- Headings, the site name, labels, buttons, inputs and results: IBM Plex Mono (`--font-mono`).
+- Body text: IBM Plex Sans (`--font-body`).
+- Weights 400 and 600 only. Page title 1.75rem (2.25rem on desktop); labels are small, uppercase and letter-spaced.
+- Every page loads both fonts from Google Fonts with the `<link>` tags used in `index.html`.
+
+**Spacing and shape**
+
+- Spacing scale: `--space-1` 0.25rem, `--space-2` 0.5rem, `--space-3` 1rem, `--space-4` 1.5rem, `--space-5` 2rem. Use only these.
+- Corners are nearly square (`--radius` 2px). Borders are 2px (`--border-width`).
+- Cards have an accent border. Results have a thick accent bar on the left.
+- Buttons and inputs are at least 44px tall.
+- Main action buttons (`type="submit"`) are filled with the accent color; other buttons are outlined.
+
 ## Feature Plan
 
 A portal where students try small Electrical Engineering tools.
