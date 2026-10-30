@@ -7,11 +7,12 @@
 
 ## Project Structure
 
-The repository is nearly empty for now. As it grows, keep things simple:
+Keep things simple:
 
-- `index.html` — the main page (top level)
-- `css/` — stylesheets
-- `js/` — scripts
+- `index.html` — the portal homepage (top level)
+- `tools/` — one page per tool (`tool-1.html` is a placeholder)
+- `css/style.css` — shared styles, including the light and dark themes
+- `js/theme.js` — the light/dark toggle, shared by every page
 
 Update this section whenever files are added or moved.
 
@@ -35,6 +36,8 @@ A portal where students try small Electrical Engineering tools.
 **Phases**
 
 - Phase 1: the portal plus its first tool, a voltage divider calculator (in: input voltage, R1, R2; out: output voltage), with the light/dark toggle and responsive layout.
+  - [x] Step 1: portal homepage, theme toggle, and a placeholder "Tool 1 — coming soon" card that opens and returns via the navigation (no tool logic, neutral styling).
+  - [ ] Step 2: build the voltage divider tool.
 - Phase 2: more Electrical Engineering tools (to be chosen later).
 - Phase 3: polish and extras (to be chosen later).
 
